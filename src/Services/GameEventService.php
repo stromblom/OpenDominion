@@ -13,7 +13,7 @@ class GameEventService
     public function getTownCrier(Dominion $dominion, Realm $realm = null) : array
     {
         if ($realm === null) {
-            return $this->getGameEventsforRound($dominion, now());
+            return $this->getGameEventsForRound($dominion, now());
         }
 
         return $this->getGameEventsForRealm($realm, now());
