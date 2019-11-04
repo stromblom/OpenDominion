@@ -2,8 +2,8 @@
 
     <!-- Logo -->
     <a href="{{ url('') }}" class="logo">
-        <span class="logo-mini">O<b>D</b></span>
-        <span class="logo-lg">Open<b>Dominion</b></span>
+        <span class="logo-mini"><span class="text-red">T</span><b>D</b></span>
+        <span class="logo-lg"><span class="text-red">Temp</span><b>Dominion</b></span>
     </a>
 
     <!-- Header Navbar -->
