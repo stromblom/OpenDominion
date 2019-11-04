@@ -49,12 +49,14 @@ class RegisterController extends AbstractController
         ]);
 
         $user = $this->create($request->all());
+        $user->activated = true;
+        $user->save();
 
         event(new UserRegisteredEvent($user));
 
         $request->session()->flash(
             'alert-success',
-            'You have been successfully registered. An activation email has been dispatched to your address.'
+            'You have been successfully registered.'
         );
 
         return redirect($this->redirectPath());
